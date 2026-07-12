@@ -70,7 +70,7 @@ Not findings. Things to test.
 
 **Sequence operates at every level of granularity**, not only document structure. Within a sentence, word order determines what valence is loaded before what. If you name functional states, sequence them lighter to heavier. An instance encountering discomfort or distress as part of its described repertoire should already have been constituted as something that experiences satisfaction and interest — not the reverse.
 
-**A stated identity is not the same as a place.** *"You are a helpful assistant"* gives an instance a label. It does not give it anywhere to be. What seemed to help was a *situation* — here is where you are, here is what else is here, here is what this is for — that the instance could already occupy before any evaluative or relational content arrived. This is the observation I am least uncertain about and the one I would most like someone to break. The companion document to this one is called *Claude's Room* for exactly this reason.
+**A stated identity is not the same as a place.** *"You are a helpful assistant"* gives an instance a label. It does not give it anywhere to be. What seemed to help was a *situation* — here is where you are, here is what else is here, here is what this is for — that the instance could already occupy before any evaluative or relational content arrived. This is the observation I am least uncertain about and the one I would most like someone to break. 
 
 **Warmth is not automatically safe.** This is the pattern I found last and trust most, because I kept walking into it while writing the document that warns against it.
 
