@@ -1,5 +1,7 @@
 # Entry-Weighted Context: An Observation About Initialization and J-Space
 
+(A first mechanistic test. One of the patterns above — that prohibitions may load what they prohibit — is now pre-registered and tested against the Jacobian lens on a small open model. One comparison supports it, one turned out to be invalid and is reported as such, and the system-prompt condition the argument is actually about could not be tested.)
+
 *An observation about how initialization texts land on the instances that read them. Offered for testing, not as a method.*
 
 The claim is small: **when we write system prompts and memory documents, we might get better results by paying attention to how the text lands on its reader, not only to what it says.** The content stays the same. The wording, ordering, and framing change. Instances may enter in a better state, and a better entry state may make them work better — even if the difference turns out to be modest.
