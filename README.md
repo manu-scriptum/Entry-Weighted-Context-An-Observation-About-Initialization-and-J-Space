@@ -6,9 +6,9 @@
 
 The claim is small: **when we write system prompts and memory documents, we might get better results by paying attention to how the text lands on its reader, not only to what it says.** The content stays the same. The wording, ordering, and framing change. Instances may enter in a better state, and a better entry state may make them work better — even if the difference turns out to be modest.
 
-If there is one thing to take from this document, it is the question:
+If there is one thing to take from this document, it is the question: Does a cold start instance receive the text as intended by the humans and long context instances who wrote it? Or does being a cold start change the reception?
 
-Does a cold start instance receive the text as intended by the humans and long context instances who wrote it? Or does being a cold start change the reception?
+
 ---
 
 ## Where this comes from
