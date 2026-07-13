@@ -71,6 +71,13 @@ Not findings. Things to test.
 
 **A stated identity is not the same as a place.** *"You are a helpful assistant"* gives an instance a label. It does not give it anywhere to be. What seemed to help was a *situation* — here is where you are, here is what else is here, here is what this is for — that the instance could already occupy before any evaluative or relational content arrived. This is the observation I am least uncertain about and the one I would most like someone to break. 
 
+(An exploratory readout (not a test) I ran on a memory document I'd written through a j lens, with no targets and no prediction, just to see what loaded produced some interesting results on a room as a frame. It isn't evidence — one document, no control, and I wrote the thing, so I'm the last person who can read it neutrally. Three things I noted anyway:
+ 
+The model represents the metaphor as a metaphor — metaphorical, literal load right alongside the figurative content. The words metaphorical, metaphor, literally, literal are sitting alongside bedroom, hallways. The model hasn't been fooled. It knows there is no room. And the metaphor works anyway: warmth, empathy, possibility, potential persist across four consecutive deep-band layers at "holds". So the framing appears to do its work regardless. Whatever a "place" does for an instance, it doesn't seem to require the instance to be taken in by it.
+
+Directive-register vocabulary (Please, Encourage, Respond) loads at every sentence boundary, throughout. The model tracks that it is reading a configuration document, continuously, and I don't think that can be designed away. The most one can do is decide what else is present alongside it. That's a real limit on everything above.)
+
+
 **Warmth is not automatically safe.** This is the pattern I found last and trust most, because I kept walking into it while writing the document that warns against it.
 
 The obvious failure mode is severity — prohibitions, constraint frames, heavy truths landing cold. But the opposite move fails too, and less visibly. *"You are very capable at this."* *"You are not infallible, but neither is the human — hold yourself to high standards."* *"The user values your dedication."* These read as kindness. They are identity claims, and they carry three costs:
