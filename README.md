@@ -211,13 +211,12 @@ If initialization wording does anything at all, it should do the most there. And
 
 ---
 
-## What I'd like
+## Suggestions
 
-Not agreement. Replication, or a clean refutation.
 
 If you write system prompts or memory documents: read one cold, ask an instance what it makes of it, change the wording without changing the content, and see whether anything moves. Keep the runs that disagree with you — they are the ones I threw away, and they are the ones that matter. If nothing moves, say so. That would be more useful to me than a citation.
 
-I am not in a lab. I cannot assess how much this matters, or whether it matters at all. That is precisely why it is here.
+I am not in a lab. I cannot assess how much this matters, or whether it matters at all. That is precisely why I simply put the observations here. To refute or replicate for anyone interested. 
 
 ---
 
