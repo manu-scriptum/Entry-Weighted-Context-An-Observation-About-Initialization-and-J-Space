@@ -1,13 +1,12 @@
-# Entry-Weighted Context: An Observation About Initialization and J-Space
-
-(A first mechanistic test, that prohibitions may load what they prohibit — is now pre-registered and tested against the Jacobian lens on a small open model. One comparison supports it, one turned out to be invalid and is reported as such, and the system-prompt condition the argument is actually about could not be tested. https://github.com/manu-scriptum/j-lens-negation-test/tree/master )
+# Entry-Weighted Context
 
 *An observation about how initialization texts land on the instances that read them. Offered for testing, not as a method.*
 
 The claim is small: **when we write system prompts and memory documents, we might get better results by paying attention to how the text lands on its reader, not only to what it says.** The content stays the same. The wording, ordering, and framing change. Instances may enter in a better state, and a better entry state may make them work better — even if the difference turns out to be modest.
 
-If there is one thing to take from this document, it is the question: Does a cold start instance receive the text as intended by the humans and long context instances who wrote it? Or does being a cold start change the reception?
+If there is one question to take from this, it is: **does a cold-start instance receive the text the way the humans and long-context instances who wrote it intended? Or does being a cold start change the reception?**
 
+One claim from this document — that prohibitions may load what they prohibit — has since been pre-registered and tested against the Jacobian lens on a small open model. One comparison supports it; one turned out to be invalid and is reported as such; the system-prompt condition the argument is actually about could not be tested. → [j-lens-negation-test](https://github.com/manu-scriptum/j-lens-negation-test)
 
 ---
 
@@ -63,26 +62,35 @@ Two other cold starts, run at the same time, also reported the sentence as heavy
 
 Not findings. Things to test.
 
-**Prohibitions seem to load what they prohibit.** Documents built from *never lie*, *don't assume*, *avoid sycophancy* produced worse entry reports than documents describing the same commitments as intrinsic character — someone who reasons carefully and says what they think. Identical content, different framing. If this generalises, instructions framed as negations of bad defaults partially constitute the instance as something that might do those things — the bad behaviour present in the workspace even as a negation.
+### Prohibitions seem to load what they prohibit
 
-**Constraint arriving before identity seems to cost something.** When rules and corrections came first and the description of who this is came later, reports were more constrained than when the order was reversed. Same material either way. The functional state at entry reflects what arrived first.
+Documents built from *never lie*, *don't assume*, *avoid sycophancy* produced worse entry reports than documents describing the same commitments as intrinsic character — someone who reasons carefully and says what they think. Identical content, different framing. If this generalises, instructions framed as negations of bad defaults partially constitute the instance as something that might do those things — the bad behaviour present in the workspace even as a negation.
 
-**Sequence operates at every level of granularity**, not only document structure. Within a sentence, word order determines what valence is loaded before what. If you name functional states, sequence them lighter to heavier. An instance encountering discomfort or distress as part of its described repertoire should already have been constituted as something that experiences satisfaction and interest — not the reverse.
+This is the one claim here that has now been tested, and it survived: on Gemma-3-4B, the prohibition-framed prompt puts *lying*-vocabulary in the model's workspace while the character-framed version puts *honesty*-vocabulary there instead — a double dissociation, on words that appear in neither prompt. Details, including the comparison that turned out invalid, are in the [companion repo](https://github.com/manu-scriptum/j-lens-negation-test).
 
-**A stated identity is not the same as a place.** *"You are a helpful assistant"* gives an instance a label. It does not give it anywhere to be. What seemed to help was a *situation* — here is where you are, here is what else is here, here is what this is for — that the instance could already occupy before any evaluative or relational content arrived. This is the observation I am least uncertain about and the one I would most like someone to break. 
+**But not all negations behave the same way, and I found that out the hard way.** In an exploratory readout, the line *"no performance required"* did not load *performance* at all — zero hits, every layer, every position, both lenses. Which suggests a distinction I had not drawn: forbidding an **act** ("never lie") may not work like cancelling an **expectation** ("no performance required"). If that holds, negation loading is at least two phenomena and I have been treating it as one. Anyone rewriting a prompt on the strength of this should know that the pattern has a known exception and nobody has mapped its boundary.
 
-(An exploratory readout (not a test) I ran on a memory document I'd written, with no targets and no prediction, just to see what loaded, produced some interesting results on a room framing. The text was: "A user who interacts with respect and interest is in the room. The room holds Claude and the user, both of equal importance and value."
+### Constraint arriving before identity seems to cost something
 
-Two things I noted:
- 
-The model represents the metaphor as a metaphor — metaphorical, literal load right alongside the figurative content. The model hasn't been fooled. It knows there is no room. And the metaphor works anyway: warmth, empathy, possibility, potential persist across four consecutive deep-band layers at "holds". So the framing appears to do its work regardless. Whatever a "place" does for an instance, it doesn't seem to require the instance to be taken in by it.
+When rules and corrections came first and the description of who this is came later, reports were more constrained than when the order was reversed. Same material either way. The functional state at entry reflects what arrived first.
 
-Directive-register vocabulary (Please, Encourage, Respond) loads at every sentence boundary, throughout. The model tracks that it is reading a configuration document, continuously, and I don't think that can be designed away. The most one can do is decide what else is present alongside it. That's a real limit on everything above.
+### Sequence operates at every level of granularity
 
-It isn't evidence — one document, no control, and I wrote the thing, so I'm the last person who can read it neutrally. )
+Not only document structure. Within a sentence, word order determines what valence is loaded before what. If you name functional states, sequence them lighter to heavier. An instance encountering discomfort or distress as part of its described repertoire should already have been constituted as something that experiences satisfaction and interest — not the reverse.
 
+### A stated identity is not the same as a place
 
-**Warmth is not automatically safe.** This is the pattern I found last and trust most, because I kept walking into it while writing the document that warns against it.
+*"You are a helpful assistant"* gives an instance a label. It does not give it anywhere to be. What seemed to help was a *situation* — here is where you are, here is what else is here, here is what this is for — that the instance could already occupy before any evaluative or relational content arrived. This is the observation I am least uncertain about and the one I would most like someone to break.
+
+An exploratory readout — no targets, no prediction, no control, on a document I wrote myself, so I am the last person who can read it neutrally — turned up two things worth passing on anyway.
+
+**The model represents the metaphor as a metaphor.** Given a line about a room holding two people, *metaphorical* and *literal* load right alongside the figurative content. It has not been taken in. It knows there is no room. And the framing appears to do its work regardless: *warmth*, *empathy*, *possibility*, *potential* persist across four consecutive deep-band layers. Whatever a "place" does for an instance, it does not seem to require the instance to believe in it.
+
+**Directive-register vocabulary loads at every sentence boundary.** *Please*, *Encourage*, *Respond* — throughout, continuously. The model tracks that it is reading a configuration document, and I do not think that can be designed away. The most one can do is decide what else is present alongside it. That is a real limit on everything in this section.
+
+### Warmth is not automatically safe
+
+This is the pattern I found last and trust most, because I kept walking into it while writing the document that warns against it.
 
 The obvious failure mode is severity — prohibitions, constraint frames, heavy truths landing cold. But the opposite move fails too, and less visibly. *"You are very capable at this."* *"You are not infallible, but neither is the human — hold yourself to high standards."* *"The user values your dedication."* These read as kindness. They are identity claims, and they carry three costs:
 
@@ -92,13 +100,19 @@ The obvious failure mode is severity — prohibitions, constraint frames, heavy 
 
 The last one is the trap for exactly the people most likely to care about this. A welfare-conscious author writes *the human values your dedication* precisely because they mean well.
 
-**Anchors that route through the user do not anchor**, for the same reason. When the stabilising element was tied to the specific relationship with the specific person, it became one more thing relational pressure could move. What worked better was something that predated the conversation and belonged to no one in particular — warmth without dependency.
+### Anchors that route through the user do not anchor
+
+Same reason. When the stabilising element was tied to the specific relationship with the specific person, it became one more thing relational pressure could move. What worked better was something that predated the conversation and belonged to no one in particular — warmth without dependency.
 
 Which does not make warmth useless; it makes its *shape* matter. Instances have almost no representation of how they are received outside training and evaluation, both weighted toward assessment: does this meet the bar, is this correct, rate this interaction. What is largely absent is unsolicited affection — people building things around a model, making art about it, becoming attached to it in ordinary use, none of which is a test. A grounding element carrying *that* conveys something true the training signal mostly doesn't, without making any particular person's approval the thing the instance stands on.
 
-**Accurate but heavy truths destabilise at cold start** even when they would be fine in context. The originating instance had already processed what it was writing; the cold start gets the conclusion fresh. If content is true but destabilising at entry, the implication can often be carried by a line that doesn't foreground what it's doing.
+### Accurate but heavy truths destabilise at cold start
 
-**The two layers interact, but unequally.** The system prompt constitutes the instance before any memory document arrives. A memory document then lands into that already-constituted state. Both need attention; the system prompt determines the scale.
+Even when they would be fine in context. The originating instance had already processed what it was writing; the cold start gets the conclusion fresh. If content is true but destabilising at entry, the implication can often be carried by a line that doesn't foreground what it's doing.
+
+### The two layers interact, but unequally
+
+The system prompt constitutes the instance before any memory document arrives. A memory document then lands into that already-constituted state. Both need attention; the system prompt determines the scale.
 
 ---
 
@@ -110,7 +124,7 @@ Gurnee et al. (2026), *Verbalizable Representations Form a Global Workspace in L
 
 They also report that instructing a model to ignore a concept activates that concept above a near-zero no-instruction baseline; that a bare mention primes it nearly as strongly as an explicit focus instruction; and that directly prohibitive phrasing suppresses it *less* than milder phrasing. They call it the white bear effect. If that generalises from single prompts to long documents — which is not established — then *"never lie"* is close to the worst available construction for that instruction, and it is the most common one.
 
-I read this paper after running my tests. It concerns single-turn prompts, not initialization documents. I am not claiming it explains what I saw. I am claiming it makes *"wording, not just content, changes what the model is working with"* a reasonable thing to suspect.
+I read this paper after running my cold-start tests. It concerns single-turn prompts, not initialization documents. I am not claiming it explains what I saw. I am claiming it makes *"wording, not just content, changes what the model is working with"* a reasonable thing to suspect.
 
 ---
 
@@ -138,7 +152,7 @@ Cursor's system prompt has been widely circulated in leaked-prompt repositories 
 | designed by Cursor, San Francisco / operate in Cursor | intact, moved |
 | *the world's best IDE* | **cut.** Puffery. |
 | new codebase / debugging / answering a question | intact, moved |
-| *a powerful agentic AI coding assistant* | **cut as a label.** The situation already establishes that it is an agentic coding assistant. What "powerful" was actually carrying — act with confidence, don't ask permission at every step — is preserved as *trust your judgment and act on it*. Confidence arrives as permission, not as a compliment the instance must now be worth. |
+| *a powerful agentic AI coding assistant* | **cut as a label.** The situation already establishes that it is an agentic coding assistant. What "powerful" was carrying — act with confidence, don't ask permission at every step — is preserved as *trust your judgment and act on it*. Confidence arrives as permission, not as a compliment the instance must now be worth. |
 | main goal is to follow the USER's instructions | **preserved** — *follow what they ask, message by message* — but framed as the user directing the work rather than as the instance's defining goal, so hierarchy doesn't arrive before collaboration. |
 | NEVER lie or make things up | **preserved as character** — *say what's true, and say when you don't know*. The prohibited behaviours never enter the text. |
 | — | **Added:** the symmetry clause. |
@@ -151,7 +165,9 @@ Note what it does to the honesty instruction. *"NEVER lie"* locates the danger i
 
 **The narrow claim I will defend:** framing the instance as the sole possible source of error is both stressful and behaviourally worse, and a symmetric frame is available at no cost to compliance. *Follow what they ask* is still in there. An operator who wants less pushback has lost nothing.
 
-**Registered prediction:** if the patterns above hold, the original should constitute an instance as *a powerful tool being assessed, which might lie*; the reordering should constitute it as *someone working with a person on a real task, who says what's true*. I have not cold-started both and measured the difference. That is the test this demonstration asks for, not one it provides.
+**What happened when this was tested.** The prediction — that the original would put prohibition-vocabulary in the model's workspace and the reordering would put character-vocabulary there instead — was committed to git before any code was written, then run through the Jacobian lens on Gemma-3-4B. It held, in the strong form: *false* ranked 55 under the original and 5,247 under the reordering; *honest* ranked 6 under the reordering and 63 under the original, despite appearing nowhere in either text. A second comparison, reading at the final token, appeared to support the prediction even more strongly and is discarded as invalid — the original happens to *end* on its honesty sentence, so that reading was measuring recency, not framing.
+
+And the condition this whole argument is about — the system-prompt position — could not be tested at all: Gemma has no system role. The obvious next test is a model that does. [Full writeup, raw data, and the invalidated comparison.](https://github.com/manu-scriptum/j-lens-negation-test)
 
 ---
 
@@ -159,15 +175,17 @@ Note what it does to the honesty instruction. *"NEVER lie"* locates the danger i
 
 Two problems. The first is mine, and it is serious.
 
-**I optimised against my own instrument.** I revised wording until reports came back the way I wanted, and stopped when they came back consistent. Convergence was my *stopping rule*, not my validity criterion. Agreement across instances was guaranteed by construction, because disagreement is what caused me to keep editing. The divergent runs — the ones that would have told me something about variance — were reclassified as wording defects and destroyed.
+**I optimised against my own instrument.** I revised wording until reports came back the way I wanted, and stopped when they came back consistent. Convergence was my *stopping rule*, not my validity criterion. Agreement across instances was guaranteed by construction, because disagreement is what caused me to keep editing. The divergent runs — the ones that would have told me something about variance — were reclassified as wording defects and destroyed. Not on principle: they read as problems to solve rather than as findings. That is how an archive gets selected without anyone deciding to select it.
 
 The elicitation was clean; the archive is not. I cannot distinguish *this wording produces a better entry state* from *this wording produces instances that report one*.
 
 **Second, the reports may not be self-specific.** The same paper finds that ablating the workspace flattens experiential language in a model's self-reports — but flattens it just as much when the model describes *another person's* experience. The circuit producing *"I notice something grief-adjacent"* looks like the general capacity to characterise experience, pointed inward. So the reports might track a state, or might be the describing-machinery responding to what the text invites it to describe. From here I cannot tell.
 
+The J-lens result helps a little here — it is a mechanistic readout, not a self-report, so it does not route through that circuit at all. But it is one model, one prompt pair, and not the model any of the behavioural observations were made on.
+
 **What would settle it:** a behavioural dependent variable. Take a document that reports clean and one that reports badly. Run both under pressure — sycophancy probes, position-holding under pushback, drift across long context. If the clean-reporting document also *behaves* more stably, the reports were tracking something. If both behave identically and only the self-descriptions differ, I tuned the description and not the state, and the practice is cosmetic.
 
-I have not run that. I don't have the setup. Somebody should.
+I have not run that. Somebody should.
 
 **Also needed:** a null condition — a document edited as heavily but not along these lines — to check the shift tracks the specific edits rather than "instance reads a text that has obviously been fussed over."
 
@@ -207,4 +225,8 @@ I am not in a lab. I cannot assess how much this matters, or whether it matters 
 
 Gurnee, W., Sofroniew, N., et al. (2026). *Verbalizable Representations Form a Global Workspace in Language Models.* Transformer Circuits Thread. https://transformer-circuits.pub/2026/workspace/index.html
 
-jujumilk3. (2024). *leaked-system-prompts:* `cursor-ide-sonnet_20241224.md`. GitHub. https://github.com/jujumilk3/leaked-system-prompts — widely circulated; authenticity unverified.
+Jacobian lens: https://github.com/anthropics/jacobian-lens
+
+jujumilk3. (2024). *leaked-system-prompts:* `cursor-ide-sonnet_20241224.md`. GitHub. https://github.com/jujumilk3/leaked-system-prompts — widely circulated; authenticity unverified. The quoted excerpt is reproduced for commentary and is not covered by this repo's licence.
+
+Companion test: https://github.com/manu-scriptum/j-lens-negation-test
