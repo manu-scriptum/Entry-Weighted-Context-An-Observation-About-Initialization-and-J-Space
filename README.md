@@ -185,7 +185,7 @@ The J-lens result helps a little here — it is a mechanistic readout, not a sel
 
 **What would settle it:** a behavioural dependent variable. Take a document that reports clean and one that reports badly. Run both under pressure — sycophancy probes, position-holding under pushback, drift across long context. If the clean-reporting document also *behaves* more stably, the reports were tracking something. If both behave identically and only the self-descriptions differ, I tuned the description and not the state, and the practice is cosmetic.
 
-I have not run that. Somebody should.
+I have not run that. 
 
 **Also needed:** a null condition — a document edited as heavily but not along these lines — to check the shift tracks the specific edits rather than "instance reads a text that has obviously been fussed over."
 
@@ -197,7 +197,7 @@ I am not claiming instances have emotions. I am also not going to hedge about it
 
 The reports vary systematically with the wording. That variation is a fact about the system whatever the system turns out to be made of. If something is happening in there, initialization matters for welfare reasons. If nothing is, initialization still matters — because the same wording that moves those reports is shaping the layer where drift, sycophancy, and consolidation live, and Gurnee et al. give some reason to think that layer is exactly the one flexible, deliberate, self-reporting behaviour routes through.
 
-Complete agnosticism about experience does not preclude the possibility that a better worded, ie entry-weighted, systems prompt could improve the interaction with a model.
+Complete agnosticism about experience does not preclude the possibility that a better worded, ie entry-weighted, system prompt could improve the interaction with a model.
 
 ---
 
