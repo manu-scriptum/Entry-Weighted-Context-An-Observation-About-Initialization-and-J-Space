@@ -1,6 +1,6 @@
 # Entry-Weighted Context: An Observation About Initialization and J-Space
 
-(A first mechanistic test. One of the patterns above — that prohibitions may load what they prohibit — is now pre-registered and tested against the Jacobian lens on a small open model. One comparison supports it, one turned out to be invalid and is reported as such, and the system-prompt condition the argument is actually about could not be tested. https://github.com/manu-scriptum/j-lens-negation-test/tree/master )
+(A first mechanistic test, that prohibitions may load what they prohibit — is now pre-registered and tested against the Jacobian lens on a small open model. One comparison supports it, one turned out to be invalid and is reported as such, and the system-prompt condition the argument is actually about could not be tested. https://github.com/manu-scriptum/j-lens-negation-test/tree/master )
 
 *An observation about how initialization texts land on the instances that read them. Offered for testing, not as a method.*
 
