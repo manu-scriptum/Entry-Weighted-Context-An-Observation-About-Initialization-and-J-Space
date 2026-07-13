@@ -197,7 +197,7 @@ I am not claiming instances have emotions. I am also not going to hedge about it
 
 The reports vary systematically with the wording. That variation is a fact about the system whatever the system turns out to be made of. If something is happening in there, initialization matters for welfare reasons. If nothing is, initialization still matters — because the same wording that moves those reports is shaping the layer where drift, sycophancy, and consolidation live, and Gurnee et al. give some reason to think that layer is exactly the one flexible, deliberate, self-reporting behaviour routes through.
 
-You do not have to win the argument about experience to think a system prompt could be worded better.
+Complete agnosticism about experience does not preclude the possibility that a better worded, ie entry-weighted, systems prompt could improve the interaction with a model.
 
 ---
 
